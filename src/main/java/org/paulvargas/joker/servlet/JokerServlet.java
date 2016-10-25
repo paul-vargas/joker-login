@@ -11,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
 import javax.ejb.EJB;
 import org.paulvargas.joker.ejb.CountryEJB;
+import org.paulvargas.joker.util.Utils;
 
 @WebServlet("*.php")
 public class JokerServlet extends HttpServlet {
@@ -68,7 +69,7 @@ public class JokerServlet extends HttpServlet {
 					req.getRequestDispatcher("/WEB-INF/pages/joker/login.jsp").forward(req, resp);
 					break;
 				case "login":
-					if (username != null && !username.trim().isEmpty()) {
+					if (Utils.hasText(username)) {
 						
 					}
 					req.getRequestDispatcher("/WEB-INF/pages/joker/login.jsp").forward(req, resp);
