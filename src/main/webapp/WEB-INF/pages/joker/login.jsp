@@ -1,58 +1,65 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-    <title>Login Launch</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<div class="container">
-    <img width="30%" src="https://openclipart.org/image/2400px/svg_to_png/171490/RAJAWALI.png" class="center-block">
-    <h3 class="text-center">Text</h3>
-    <h2 class="text-center"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Text</h2>
-    <hr>
-    <form method="post" accept-charset="utf-8" autocomplete="on">
-        <p class="text-center">
-            <label for="username">Username:
-                <input type="text"
-                       name="username" id="username" size="25"
-                       placeholder="e.g. administrator"
-                       title="Username must be between 8 and 20 characters"
-                       pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" class="form-control">
-            </label>
-        </p>
-        <p class="text-center">
-            <label for="password">Today's Password:
-                <input type="password"
-                       name="password" id="password" size="25" placeholder="e.g. X8df!90EO"
-                       title="Password must contain 1 uppercase, lowercase and number"
-                       pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                       required="required" class="form-control">
-            </label>
-        </p><%--
-        <p class="text-center">
-            <input type="checkbox" name="loginkeeping" id="loginkeeping"
-                   value="loginkeeping"/> <label for="loginkeeping">Keep me
-            logged in</label>
-        </p>--%>
-        <p class="text-center">
-            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"
-                                                                aria-hidden="true"></span>
-                Submit
-            </button>
-        </p>
-    </form>
-</div>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+		<title>Login Launch</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			img svg {
+				fill: currentColor;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<svg xmlns="http://www.w3.org/2000/svg" width="120" height="150" viewBox="0 0 368.34 421.19" preserveAspectRatio="xMidYMid meet" class="center-block"><path d="M184.17 2.5c-2.281 0-2.107.322-2.381.424-.274.102-.42.2-.555.261-.27.122-.451.24-.685.359-.468.238-1.03.47-1.729.848a492.221 492.221 0 0 0-5.774 3.197c-4.884 2.738-11.738 6.676-19.932 11.352-16.387 9.352-38.084 21.802-59.763 34.318S50.012 78.355 33.719 87.87c-8.147 4.758-14.989 8.753-19.801 11.613-2.406 1.43-4.289 2.594-5.644 3.425-.677.416-1.224.726-1.663 1.012-.22.143-.412.283-.653.456-.12.087-.199.173-.424.36-.225.186-.458-.15-1.598 1.826s-.702 1.962-.75 2.25c-.05.289-.117.44-.131.588-.03.295-.019.521-.033.783-.028.524-.044 1.13-.065 1.925-.043 1.589-.095 3.823-.13 6.622a3048.44 3048.44 0 0 0-.196 22.933c-.094 18.868-.13 43.897-.13 68.93s.036 50.062.13 68.93c.047 9.434.125 17.335.196 22.933.035 2.799.087 5 .13 6.59.021.794.037 1.433.065 1.957.014.262.004.487.033.783.014.147.081.299.13.587.05.288-.39.275.75 2.25s1.374 1.641 1.6 1.828c.224.186.303.305.423.391.241.173.433.281.653.424.44.286.986.628 1.663 1.044a494.62 494.62 0 0 0 5.644 3.393c4.813 2.86 11.655 6.855 19.801 11.613a14629.776 14629.776 0 0 0 59.632 34.612 14521.472 14521.472 0 0 0 59.763 34.318c8.194 4.676 15.048 8.582 19.932 11.32 2.442 1.368 4.376 2.472 5.774 3.23.699.378 1.261.642 1.729.88.234.119.415.204.685.326.135.062.28.16.555.261.274.102.1.424 2.381.424.57 0 .965-.033 1.272-.065.921-.095.871-.282 1.077-.359.274-.102.42-.2.554-.26.27-.123.484-.208.718-.327.467-.238 1.03-.502 1.729-.88 1.398-.758 3.332-1.861 5.774-3.23 4.883-2.738 11.706-6.644 19.899-11.32 8.194-4.677 17.738-10.138 27.924-15.985a14526.371 14526.371 0 0 0 31.871-18.333 14455.874 14455.874 0 0 0 59.632-34.612 3303.15 3303.15 0 0 0 19.769-11.613c2.406-1.43 4.321-2.561 5.676-3.393a77.894 77.894 0 0 0 1.664-1.044c.22-.143.378-.251.62-.424.12-.086.231-.205.456-.391.226-.187.426.148 1.566-1.827 1.14-1.976.734-1.963.783-2.251.05-.288.083-.44.098-.587.03-.296.019-.521.033-.783.027-.524.076-1.163.097-1.958.043-1.589.095-3.79.131-6.59.07-5.597.116-13.498.163-22.932.094-18.868.163-43.897.163-68.93 0-12.516-.008-25.014-.032-36.765-.025-11.75-.084-22.731-.13-32.165-.048-9.434-.093-17.335-.164-22.933-.035-2.8-.088-5.033-.13-6.622-.022-.795-.071-1.401-.098-1.925-.014-.262-.006-.488-.033-.783-.014-.148-.05-.299-.098-.587-.05-.288.358-.275-.783-2.251-1.14-1.976-1.34-1.64-1.566-1.827a7.753 7.753 0 0 0-.456-.359c-.242-.173-.4-.313-.62-.456-.44-.286-.986-.596-1.664-1.012a469.867 469.867 0 0 0-5.676-3.425c-4.81-2.86-11.62-6.855-19.76-11.613-16.3-9.515-37.96-22.095-59.64-34.611a14132.27 14132.27 0 0 0-59.79-34.318c-8.2-4.677-15.02-8.615-19.9-11.353a455.31 455.31 0 0 0-5.78-3.197c-.69-.379-1.26-.61-1.72-.848-.24-.119-.45-.236-.72-.359-.135-.06-.28-.159-.555-.26a.536.536 0 0 1-.163-.099c-.17-.133-.47-.326-2.19-.326zm6.23 17.518c4.719 2.653 10.86 6.127 18.302 10.374 16.356 9.334 38.033 21.81 59.698 34.318s43.273 25.017 59.535 34.514a3213.538 3213.538 0 0 1 17.159 10.08l-25.184 14.549-65.015-37.515-1.827-1.044-2.088.228-60.187 7.275c-1.858-1.353-4.147-2.186-6.622-2.186-6.221 0-11.254 5.066-11.254 11.287a11.247 11.247 0 0 0 11.254 11.254c5.143 0 9.449-3.446 10.798-8.155l55.424-6.687 66.353 38.298 3.164 1.794 3.132-1.794 29.262-16.931c.066 5.49.15 13.006.196 22.052.094 18.832.13 43.848.13 68.864s-.037 50.033-.13 68.864a3295.03 3295.03 0 0 1-.163 20.617l-26.13-15.071v-77.15l-1.273-1.697-36.177-48.247c.288-.994.457-2.044.457-3.131a11.247 11.247 0 0 0-11.254-11.254 11.247 11.247 0 0 0-11.254 11.254c0 6.22 5.034 11.287 11.254 11.287.378 0 .741-.03 1.11-.066l34.513 46.03v80.25l3.164 1.826 29.523 17.061a3021.611 3021.611 0 0 1-18.333 10.798c-16.262 9.497-37.87 22.038-59.535 34.546s-43.342 24.951-59.698 34.285c-7.218 4.12-13.14 7.484-17.81 10.113v-30.99l64.981-37.516 1.795-1.044.848-1.957 22.313-52.195c4.833-1.268 8.384-5.633 8.384-10.863 0-6.221-5.034-11.287-11.254-11.287-6.221 0-11.254 5.066-11.254 11.287 0 2.507.8 4.783 2.185 6.655l-21.17 49.552-66.32 38.265-3.132 1.827v38.722a3422.435 3422.435 0 0 1-18.627-10.57 14638.708 14638.708 0 0 1-119.265-68.831 2972.943 2972.943 0 0 1-19.54-11.514l26.782-15.463 65.015 37.515 1.794 1.043 2.088-.26 58.784-7.08c2.061 2.64 5.264 4.372 8.873 4.372a11.247 11.247 0 0 0 11.254-11.254c0-6.221-5.034-11.287-11.254-11.287-4.142 0-7.765 2.248-9.722 5.578l-57.349 6.916-66.32-38.298-3.164-1.827-3.164 1.827-28.48 16.441c-.053-5.202-.091-11.501-.13-19.214a14481.093 14481.093 0 0 1 0-137.729c.042-8.33.104-15.158.163-20.519l28.12 16.246v77.118l1.273 1.696 34.48 45.997c-.49 1.264-.75 2.641-.75 4.078a11.247 11.247 0 0 0 11.254 11.254c.389 0 .763-.027 1.142-.065 5.68-.577 10.113-5.357 10.113-11.19 0-.388-.027-.795-.065-1.174-.577-5.681-5.357-10.113-11.19-10.113h-.162l-33.47-44.659v-80.217l-3.165-1.826-31.643-18.268a2946.183 2946.183 0 0 1 18.431-10.863c16.27-9.507 37.88-22.016 59.54-34.524 21.67-12.508 43.38-24.984 59.73-34.318 7.377-4.21 13.431-7.662 18.137-10.308v32.785l-64.982 37.548-1.826 1.043-.816 1.925-21.498 50.27c-5.399.833-9.525 5.492-9.525 11.124 0 6.221 5.033 11.287 11.254 11.287.388 0 .763-.027 1.141-.065 5.68-.577 10.113-5.39 10.113-11.222 0-.261-.015-.493-.032-.75a11.22 11.22 0 0 0-1.533-4.959l20.845-48.802 66.32-38.298 3.164-1.827V20.008zm-70.592 111.08v159h33.405v-71.213h62.144v71.213h33.176v-159h-33.176v60.154h-62.144v-60.154h-33.405z" style="block-progression:tb;text-indent:0;text-transform:none" color="#333" stroke="#ddd" stroke-width="5" fill="none"/></svg>
+			</div>
+			<h3 class="text-center">Text</h3>
+			<h2 class="text-center"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Text</h2>
+			<hr>
+			<form method="post" accept-charset="utf-8" autocomplete="on">
+				<p class="text-center">
+					<label for="username">Username:
+						<input type="text"
+							   name="username" id="username" size="25"
+							   placeholder="e.g. administrator"
+							   title="Username must be between 8 and 20 characters"
+							   pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" class="form-control">
+					</label>
+				</p>
+				<p class="text-center">
+					<label for="password">Today's Password:
+						<input type="password"
+							   name="password" id="password" size="25" placeholder="e.g. X8df!90EO"
+							   title="Password must contain 1 uppercase, lowercase and number"
+							   pattern="^(?=\D*\d)[^A-Za-z]*(?:[a-z][^A-Z]*[A-Z]|[A-Z][^a-z]*[a-z]).*"
+							   required="required" class="form-control">
+					</label>
+				</p><%--
+				<p class="text-center">
+					<input type="checkbox" name="loginkeeping" id="loginkeeping"
+						   value="loginkeeping"/> <label for="loginkeeping">Keep me
+					logged in</label>
+				</p>--%>
+				<p class="text-center">
+					<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"
+																		aria-hidden="true"></span>
+						Submit
+					</button>
+				</p>
+			</form>
+		</div>
+	</body>
 </html>

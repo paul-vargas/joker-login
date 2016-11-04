@@ -19,7 +19,7 @@
 </head>
 <body>
 <div class="container">
-    <img width="30%" src="https://openclipart.org/image/2400px/svg_to_png/171490/RAJAWALI.png" class="center-block">
+    <img width="30%" src="https://openclipart.org/download/192716/1397259204.svg" class="center-block">
     <h4 class="text-center">Login Launch</h4>
     <h3 class="text-center"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> WARNING!</h3>
     <hr>
